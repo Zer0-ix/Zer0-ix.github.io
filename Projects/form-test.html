@@ -1,0 +1,86 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Order</title>
+    <style>
+        button {
+            width: 20px;
+            height: 10px;
+        }
+
+        img {
+            width: 100px;
+        }
+
+        textarea {
+            width: 100%;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <form action="">
+
+        <h2>My Information</h2>
+        <fieldset>
+            <legend>User info</legend>
+
+            <input list="gender">
+            <datalist id="gender">
+                <option value="Mr."></option>
+                <option value="Ms./Mrs."></option>
+            </datalist>
+            <br>
+
+            <label for="">Name</label>
+            <input name="please_enter_your_full_name" type="text" placeholder="Please enter your full name">
+            <br>
+            Email
+            <input name="please_enter_your_full_name" type="text" placeholder="Please enter your email">
+            <br>
+            Phone
+            <input name="please_enter_your_phone_number" type="text" placeholder="Please enter your phone number">
+            <br>
+            City:
+            <input list="city">
+            <datalist id="city">
+                <option value="Toronto"></option>
+                <option value="London"></option>
+                <option value="Brantford"></option>
+            </datalist>
+
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Order Information</legend>
+            <img src="https://www.japanesecooking101.com/wp-content/uploads/2019/08/DSC00528b-1024x575.jpg">
+            <img src="https://d3awvtnmmsvyot.cloudfront.net/api/file/pMKYhTbSTHyP3NbCvQ5X/convert?fit=max&w=1150&quality=60&cache=true&rotate=exif&compress=true">
+            <img src="https://uncutrecipes.com/Images-Recipes-Japanese/Temaki-Sushi.jpg">
+            <img src="https://chowhound3.cbsistatic.com/resize/ef92c359d890a4182c5a27bf4e95807cf202b5f5/2015/08/31553_inside_out_vegetable_maki.jpg?fit=bounds&width=1200">
+
+            <br>
+            <input min="0" max="4" type="range" value=100>
+            <br>
+            Date: <input type="date">
+            <br>
+            Time:<input type="time">
+            <br>
+            <br>
+
+            <input type="radio" name=payment>Master Card
+            <input type="radio" name=payment>Visa Card
+            <input type="radio" name=payment>Paypal
+            <br>
+            <br>
+            <textarea name="Please leave your comments here." comments="" cols="30" rows="10"></textarea>
+        </fieldset>
+
+        <br>
+        <input type="submit">
+        <input type="reset">
+    </form>
+</body>
+
+
+

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        form {
+            width: 400px;
+
+        }
+
+        label {
+            display: inline-block;
+            width: 110px;
+        }
+
+        textarea {
+            width: 100%;
+
+        }
+
+        select {
+            width: 174px;
+        }
+
+        .row {
+            padding: 6px;
+        }
+        button{
+            margin-top: 6px; 
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <fieldset>
+            <legend>
+                Payment information
+            </legend>
+            <div class="row">
+                <label for="">Name</label>
+                <input type="text" placeholder="Please enter your full name">
+            </div>
+            <div class="row">
+                <label for="">Email</label>
+                <input type="text" placeholder="Please enter your email">
+            </div>
+            <div class="row">
+                <label for="">Phone</label>
+                <input type="text" placeholder="Please enter your phone number">
+            </div>
+            <div class="row">
+                <label for="">City:</label>
+                <select name="" id="">
+                    <option value="">Toronto</option>
+                    <option value="">London</option>
+                    <option value="">Mississauga</option>
+                    <option value="">Brampton</option>
+                </select>
+            </div>
+            <div class="row">
+                <label for="">Payment options</label>
+                <input type="radio" name="payment">Master Card
+                <input type="radio" name="payment">Visa
+                <input type="radio" name="payment">Paypal
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Please leave your comments"></textarea>
+        </fieldset>
+        <button>Submit</button>
+    </form>
+</body></html>

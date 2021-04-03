@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>specificity</title>
+    <style>
+/*     specificity:how specific the css selector is /
+        /* tag selector */
+        ul {
+            font-size: 50px;
+            color: purple;
+        }
+
+        /* class selector */
+        .first {
+            color: royalblue;
+        }
+
+        li {
+            color: red !important;        }
+
+        /*        why li changed color too? 
+        because li in ul and inherit the color from ul */
+        /* cascading: like waterfall */
+        /* cascading style sheet: CSS */
+    </style>
+</head>
+
+<body>
+    <!--tag < class < id < !important<inline css-->
+    <ul>
+        <li id='first' class='first' style='color:lime !important'>Hot dog</li>
+        <li>Poutine</li>
+        <li>Pizza</li>
+    </ul>
+</body></html>
+
+
